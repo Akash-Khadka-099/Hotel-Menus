@@ -34,17 +34,20 @@ MealDetailScreen.navigationOptions = (navigationData) => {
 
   return {
     headerTitle: selectedMeal.title,
+    // headerRight: () => {
+    //   <Text>fav</Text>;
+    // },   
     headerRight: () => {
-      
-      <HeaderButtons HeaderButtonComponent={HeaderButton} >
-        <Item
-          title='Favorite'
-          iconName='ios-star'
-          onPress={() => {
-            console.log("it worked");
-          }}
-        />
-      </HeaderButtons>;
+
+    <HeaderButtons HeaderButtonComponent={HeaderButton} >
+      <Item
+        title='Favorite'
+        iconName='ios-star'
+        onPress={() => {
+          console.log("it worked");
+        }}
+      />
+    </HeaderButtons>;
     },
   };
 };
